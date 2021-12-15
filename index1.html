@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reg-form</title>
+    <link rel="stylesheet" href="css/master.css" />
+    <link rel="stylesheet" href="css/parnian-responsive-v1.1.css" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+  </head>
+
+  <body>
+    <main class="main">
+      <section class="sign-in">
+        <div class="sign-in2">
+          <h1>Sign In</h1>
+          <nav>
+            <ul>
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-google-plus-g"></i></li>
+              <li><i class="fab fa-linkedin-in"></i></li>
+            </ul>
+          </nav>
+          <p>or use your email account:</p>
+          <form action="login.php" onsubmit="return _check()" class="login">
+            <input type="text" placeholder="Email" />
+            <label for="">Your Email is Incorrect</label>
+            <input onkeyup="_checkpass()" type="text" placeholder="Password" />
+            <label for="">Your Password is Incorrect</label>
+            <p>Forgot your password</p>
+            <button>SIGN IN</button>
+          </form>
+        </div>
+        <div class="sign-up2">
+          <h1>Create Account</h1>
+          <nav>
+            <ul>
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-google-plus-g"></i></li>
+              <li><i class="fab fa-linkedin-in"></i></li>
+            </ul>
+          </nav>
+          <p>or use your email account:</p>
+          <form
+            action="register.php"
+            onsubmit="return _check2()"
+            class="register"
+          >
+            <input type="text" placeholder="Username" />
+            <label for="">your Username is correct</label>
+            <input type="text" placeholder="Email" />
+            <label for="">Your Email is Incorrect</label>
+            <input onkeyup="_checkpass2()" type="text" placeholder="Password" />
+            <label for="">Your Password is Incorrect</label>
+            <p>Forgot your password</p>
+            <button>SIGN UP</button>
+          </form>
+        </div>
+      </section>
+      <section class="description">
+        <div>
+          <h2>Hello, Friend!</h2>
+          <p>Enter your personal details and start a journey with us</p>
+          <button class="to-left">SIGN UP</button>
+        </div>
+        <div class="description2">
+          <h2>Welcome, Back!</h2>
+          <p>To keep connected with us please login with your personal info</p>
+          <button class="to-right">SIGN IN</button>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://kit.fontawesome.com/db4848223f.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="js/app.js"></script>
+</html>
